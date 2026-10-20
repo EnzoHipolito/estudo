@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.cad.css">
+    <script src="../js/atuali_agendamento.js"defer></script>
+    <title>Cadastro de agendamento</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Voltar para o menu</a>
+        </nav>
+        <br><br>
+    </header>
+    <main>
+        <form>
+            <label for="data">Escolha a nova data do agendamento:</label>
+            <input type="date" id="data">
+            <label for="horario">Digite o novo horario do agendamento:</label>
+            <input type="time" id="horario">
+            <label for="servico">Escolha o novo serviço</label>
+            <select name="servico" id="servico">
+                <option value="REVISAO">Revisão</option>
+                <option value="MANUTENCAO">Manutenção</option>
+                <option value="INSTALACAO">Instalação</option>
+            </select>
+            <label for="codVeiculo">Digite o novo codigo do Veiculo:</label>
+            <input type="number" id="codVeiculo">
+            <label for="codCliente">Digite o novo codigo do Cliente:</label>
+            <input type="number" id="codCliente">
+    
+            <button id="btn_atualizar">Atualizar Agendamento</button>
+            <div id="res"></div>
+        </form>
+    </main>
+</body>
+</html>
